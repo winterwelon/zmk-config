@@ -11,6 +11,16 @@
 
 
 / {
+    behaviors {
+        tdn1: tap_dance_N1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp EXCL>;
+        };
+    };
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,7 +34,7 @@
 
 
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp N3   &kp N4     &kp N5      &kp N6      &kp N7  &kp N8      &kp N9      &kp N0      &kp BSPC
+                &kp ESC    &tdn1        &kp N2      &kp N3   &kp N4     &kp N5      &kp N6      &kp N7  &kp N8      &kp N9      &kp N0      &kp BSPC
                 &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P       &kp SQT
                 &kp GRAVE  &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI    &kp RET
                 &kp LSHFT  &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M   &kp COMMA   &kp DOT     &kp UP      &kp FSLH
@@ -35,64 +45,64 @@
         lower_layer {
             // -------------------------------------------------------------------------------------------
             // |   F1  |  F2   |  F3   |  F4  |  F5   |  F6   |   F7  |  F8   |  F9  | F10  |  F11  |  F12  |
-            // |  TAB  | PG_UP | PG_DN | Home |  END  |       |       |       |      |      |   -   |   =   |
-            // |   `   |       |       |      |       |       |       |       |      |      |       |       |
+            // |  TAB  |  INS  |  HOME | PG UP|       |       |       |       |      |      |   -   |   =   |
+            // |   `   |  DEL  |  END  | PG DN|       |       |       |       |      |      |       |       |
             // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |       |   \   |
             // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |      |       |       |
             bindings = <
                 &kp F1     &kp F2      &kp F3      &kp F4    &kp F5     &kp F6      &kp F7      &kp F8       &kp F9    &kp F10    &kp F11    &kp F12
-                &kp TAB    &kp PG_UP   &kp PG_DN   &kp HOME  &kp END    &none       &none       &none        &none     &none      &kp MINUS  &kp EQUAL
-                &kp GRAVE  &kp INSERT  &none       &none     &none      &none       &none       &none        &none     &none      &none      &none
-                &kp RSHFT  &none       &none       &none     &none      &none       &none       &none        &kp LBKT  &kp RBKT   &none      &kp BSLH
+                &kp TAB    &kp INS     &kp HOME    &kp PG_UP &none      &none       &none       &none        &none     &none      &kp MINUS  &kp EQUAL
+                &kp GRAVE  &kp DEL     &kp END     &kp PG_DN &none      &none       &none       &none        &none     &none      &none      &none
+                &CAPS      &none       &none       &none     &none      &none       &none       &none        &kp LBKT  &kp RBKT   &none      &kp BSLH
                 &kp RCTRL  &kp RGUI    &kp RALT    &mo 1     &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE    &mo 2     &none      &none      &none
             >;
         };
 
         raise_layer {
             // ------------------------------------------------------------------------------------------
-            // |  DSK  |       |       |      |       |BT_NXT |BT_CLR |       |      |      |             |   DEL  |
-            // |  TAB  |       |       |      |       |       |       |       |      |      |      -      |    =   |
-            // |   `   |       |       |      |       |       |       |       |      |      |             |        |
-            // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |   VOL_UP    |   \    |
-            // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |  RW  |   VOL_DN    |    FF  |
+            // | PRTSCN|       |       |      |       |BT_NXT |BT_CLR |       |      |      |       |   DEL  |
+            // |  TAB  |       |       |      |       |       |       |       |      |      |   -   |    =   |
+            // |   `   |       |       |      |       |       |       |       |      |      |       |        |
+            // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |       |    \   |
+            // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |      |       |        |
             bindings = <
-                &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none    &none       &none     &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none      &none             &kp DEL
-                &kp TAB                           &none    &none       &none     &none      &none        &none       &none        &none     &none      &kp MINUS         &kp EQUAL
-                &kp GRAVE                         &none    &none       &none     &none      &none        &none       &none        &none     &none      &none             &none
-                &kp RSHFT                         &none    &none       &none     &none      &none        &none       &none        &kp LBKT  &kp RBKT   &kp K_VOL_UP      &kp BSLH
-                &kp RCTRL                         &kp RGUI &kp RALT    &mo 1     &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2      &kp C_RW   &kp K_VOL_DN      &kp C_FF
+                &kp PSCRN   &none    &none       &none     &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none      &none       &kp DEL
+                &kp TAB     &none    &none       &none     &none      &none        &none       &none        &none     &none      &kp MINUS   &kp EQUAL
+                &kp GRAVE   &none    &none       &none     &none      &none        &none       &none        &none     &none      &none       &none
+                &kp RSHFT   &none    &none       &none     &none      &none        &none       &none        &kp LBKT  &kp RBKT   &none       &kp BSLH
+                &kp RCTRL   &kp RGUI &kp RALT    &mo 1     &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &none      &none       &none
             >;
         };
 
         adjust_layer {
-            // ------------------------------------------------------------------------------------------
-            // |tog(4)|  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |  F11 |    F12    |
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |LALT(PRTSN)|
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |   PRTSN   |
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |  NA  |LCTRL(DEL) |
-            // |      |      |      |      |      |BOOTLD|BOOTLD|      |      |      |      |           |
+            // -----------------------------------------------------------------------------------------------
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
             bindings = <
-                &tog 4 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp LA(PSCRN)
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp PSCRN
-                &trans &none  &none  &none  &none  &none  &none  &none  &none  &none   &none   &kp LC(DEL)
-                &trans &trans &trans &trans &trans &bootloader   &bootloader &trans &trans &trans &trans  &trans
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
             >;
         };
 
         flock_layer {
-            // ----------------------------------------------------------------------------------------------
-            // |tog(4) |  F2    |   F3   |   F4   |   F5   |   F6   |  F7  |  F8  |  F9  | F10 | F11 |      |
-            // |out tog|BT_SEL 0|BT_SEL 1|BT_SEL 2|BT_SEL 3|BT_SEL 4|BT_PRV|BT_NXT|BT_CLR|     |     |      |
-            // |       |        |        |        |        |        |      |      |      |     |     |      |
-            // |       |        |        |        |        |        |      |      |      |     |     |      |
-            // |       |        |        |        |        |        |      |      |      |     |     |      |
+            // -----------------------------------------------------------------------------------------------
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
+            // |      |       |       |       |       |      |       |       |       |       |       |       |
             bindings = <
-                &tog 4       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6       &kp F7     &kp F8     &kp F9     &kp F10 &kp F11 &trans
-                &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
             >;
         };
     };
