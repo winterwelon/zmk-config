@@ -11,6 +11,7 @@
 
 
 / {
+   {
     behaviors {
         tdn1: tap_dance_N1 {
             compatible = "zmk,behavior-tap-dance";
