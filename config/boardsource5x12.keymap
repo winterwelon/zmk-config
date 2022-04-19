@@ -17,50 +17,50 @@
         default_layer {
             // ------------------------------------------------------------------------------------------
             // |  ESC  |  1   |  2   |  3   |  4   |  5   |   6   |  7    |  8   |  9   |   0   | BSPC  |
-            // |   '   |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   |  \    |
-            // |  TAB  |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   | ENTER |
+            // |  TAB  |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   |   '   |
+            // |   `   |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   | ENTER |
             // | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   | UARW  |  /    |
-            // | LCTL  | LALT | LGUI | LOWR | SPACE| SPACE| SPACE | SPACE | RAIS | LARW | DARW  | RARW  |
+            // | LCTL  | LGUI | LALT | LOWR | SPACE| SPACE| SPACE | SPACE | RAIS | LARW | DARW  | RARW  |
 
 
             bindings = <
                 &kp ESC    &kp N1       &kp N2      &kp N3   &kp N4     &kp N5      &kp N6      &kp N7  &kp N8      &kp N9      &kp N0      &kp BSPC
-                &kp SQT    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P       &kp BSLH
-                &kp TAB    &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI    &kp RET
+                &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P       &kp SQT
+                &kp GRAVE  &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI    &kp RET
                 &kp LSHFT  &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M   &kp COMMA   &kp DOT     &kp UP      &kp FSLH
-                &kp LCTRL  &kp LALT     &kp LGUI    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2    &kp LEFT    &kp DOWN    &kp RIGHT 
+                &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2    &kp LEFT    &kp DOWN    &kp RIGHT 
             >;
         };
 
         lower_layer {
             // -------------------------------------------------------------------------------------------
-            // |  ESC  |  F2  |  F3  |  F4  |  F5  |  F6  |   F7  |  F8   |  F9  | F10  |  F11  |  F12  |
-            // |   ~   |  !   |  @   |  #   |  $   |  %   |   ^   |   &   |  *   |  1   |   2   |   3   |
-            // |       |  F1  |  F2  |  F3  |  F4  |  F5  |   F6  |   _   |  +   |  4   |   5   |   6   |
-            // |       |  F7  |  F8  |  F9  |  F10 |  F11 |   F12 | LS(#) |LS(|) |  7   |   8   |   9   |
-            // |       |      |      |      |      |      |       |       | NEXT |      |   0   |       |
+            // |   F1  |  F2   |  F3   |  F4  |  F5   |  F6   |   F7  |  F8   |  F9  | F10  |  F11  |  F12  |
+            // |  TAB  | PG_UP | PG_DN | Home |  END  |       |       |       |      |      |   -   |   =   |
+            // |   `   |       |       |      |       |       |       |       |      |      |       |       |
+            // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |       |   \   |
+            // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |      |       |       |
             bindings = <
-                &kp ESC   &kp F2   &kp F3   &kp F4   &kp F5    &kp F6       &kp F7          &kp F8              &kp F9              &kp F10      &kp F11          &kp F12
-                &kp TILDE &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT    &kp CARET       &kp AMPS            &kp ASTRK           &kp N1       &kp N2           &kp N3
-                &trans    &kp F1   &kp F2   &kp F3   &kp F4    &kp F5       &kp F6          &kp UNDER           &kp PLUS            &kp N4       &kp N5           &kp N6
-                &trans    &kp F7   &kp F8   &kp F9   &kp F10   &kp F11      &kp F12         &kp LS(NON_US_HASH) &kp LS(NON_US_BSLH) &kp N7       &kp N8           &kp N9
-                &trans   &trans   &trans   &trans    &trans    &trans       &trans          &mo 3               &kp C_NEXT          &trans       &kp N0           &trans 
+                &kp F1     &kp F2      &kp F3      &kp F4    &kp F5     &kp F6      &kp F7      &kp F8       &kp F9    &kp F10    &kp F11    &kp F12
+                &kp TAB    &kp PG_UP   &kp PG_DN   &kp HOME  &kp END    &none       &none       &none        &none     &none      &kp MINUS  &kp EQUAL
+                &kp GRAVE  &kp INSERT  &none       &none     &none      &none       &none       &none        &none     &none      &none      &none
+                &kp RSHFT  &none       &none       &none     &none      &none       &none       &none        &kp LBKT  &kp RBKT   &none      &kp BSLH
+                &kp RCTRL  &kp RGUI    &kp RALT    &mo 1     &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE    &mo2      &none      &none      &none
             >;
         };
 
         raise_layer {
             // ------------------------------------------------------------------------------------------
-            // |  ESC  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7   |  F8   |  F9  | F10  |  F11  |  F12  |
-            // |   ~   |  1   |  2   |  3   |  4   |  5   |  6    |   7   |  8   |  9   |   0   |  DEL  |
-            // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5  |  F6   |   -   |  =   |  [   |   ]   |   \   |
-            // |       |  F7  |  F8  |  F9  |  F10 |  F11 |  F12  |   #   |  |   |      |       |       |
-            // |       |      |      |      |      |      |       |       |       |      |      |       |
+            // |  DSK  |       |       |      |       |BT_NXT |BT_CLR |       |      |      |             |   DEL  |
+            // |  TAB  |       |       |      |       |       |       |       |      |      |      -      |    =   |
+            // |   `   |       |       |      |       |       |       |       |      |      |             |        |
+            // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |   VOL_UP    |   \    |
+            // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |  RW  |   VOL_DN    |    FF  |
             bindings = <
-                &kp ESC   &kp F2   &kp F3   &kp F4   &kp F5    &kp F6  &kp F7    &kp F8          &kp F9          &kp F10      &kp F11          &kp F12
-                &kp TILDE &kp N1   &kp N2   &kp N3   &kp N4    &kp N5  &kp N6    &kp N7          &kp N8          &kp N9       &kp N0           &kp DEL
-                &kp DEL   &kp F1   &kp F2   &kp F3   &kp F4    &kp F5  &kp F6    &kp MINUS       &kp EQUAL       &kp LBKT     &kp RBKT         &kp BSLH
-                &trans    &kp F7   &kp F8   &kp F9   &kp F10   &kp F11 &kp F12   &kp NON_US_HASH &kp NON_US_BSLH &trans       &trans           &trans
-                          &trans   &trans   &trans   &trans    &mo 3   &trans &trans &trans    &trans          &trans          &trans       &trans
+                &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &none    &none       &none     &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none      &none             &kp DEL
+                &kp TAB                           &none    &none       &none     &none      &none        &none       &none        &none     &none      &kp MINUS         &kp EQUAL
+                &kp GRAVE                         &none    &none       &none     &none      &none        &none       &none        &none     &none      &none             &none
+                &kp RSHFT                         &none    &none       &none     &none      &none        &none       &none        &kp LBKT  &kp RBKT   &kp K_VOL_UP      &kp BSLH
+                &kp RCTRL                         &kp RGUI &kp RALT    &mo 1     &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo2      &kp C_RW   &kp K_VOL_DN      &kp C_FF
             >;
         };
 
