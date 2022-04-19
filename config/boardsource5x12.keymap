@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N1";
             #binding-cells = <0>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <185>;
             bindings = <&kp N1>, <&kp EXCL>;
         };
         
@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N2";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <185>;
             bindings = <&kp N2>, <&kp AT>;
         };
         
@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N3";
             #binding-cells = <0>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <185>;
             bindings = <&kp N3>, <&kp POUND>;
         };
         
@@ -41,8 +41,56 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N4";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <185>;
             bindings = <&kp N4>, <&kp DLLR>;
+        };
+        
+        tdn5: tap_dance_n5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N5";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N5>, <&kp PRCNT>;
+        };
+        
+        tdn6: tap_dance_n6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N6";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N6>, <&kp CARET>;
+        };
+        
+        tdn7: tap_dance_n7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N7";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N7>, <&kp AMPS>;
+        };
+        
+        tdn8: tap_dance_n8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N8";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N8>, <&kp ASTRK>;
+        };
+        
+        tdn9: tap_dance_n9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N9";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N9>, <&kp LPAR>;
+        };
+        
+        tdn0: tap_dance_n0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_N0";
+            #binding-cells = <0>;
+            tapping-term-ms = <185>;
+            bindings = <&kp N0>, <&kp RPAR>;
         };
     };
 
@@ -59,11 +107,11 @@
 
 
             bindings = <
-                &kp ESC    &tdn1        &tdn2       &tdn3    &tdn4      &kp N5      &kp N6      &kp N7  &kp N8      &kp N9      &kp N0      &kp BSPC
-                &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U   &kp I       &kp O       &kp P       &kp SQT
-                &kp GRAVE  &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J   &kp K       &kp L       &kp SEMI    &kp RET
-                &kp LSHFT  &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M   &kp COMMA   &kp DOT     &kp UP      &kp FSLH
-                &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2    &kp LEFT    &kp DOWN    &kp RIGHT 
+                &kp ESC    &tdn1        &tdn2       &tdn3    &tdn4      &tdn5       &tdn6       &tdn7      &tdn8       &tdn9       &tdn0       &kp BSPC
+                &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U      &kp I       &kp O       &kp P       &kp SQT
+                &kp GRAVE  &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J      &kp K       &kp L       &kp SEMI    &kp RET
+                &kp LSHFT  &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M      &kp COMMA   &kp DOT     &kp UP      &kp FSLH
+                &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2       &kp LEFT    &kp DOWN    &kp RIGHT 
             >;
         };
 
@@ -78,24 +126,24 @@
                 &kp F1     &kp F2      &kp F3      &kp F4    &kp F5     &kp F6      &kp F7      &kp F8       &kp F9    &kp F10    &kp F11    &kp F12
                 &kp TAB    &kp INS     &kp HOME    &kp PG_UP &none      &none       &none       &none        &none     &none      &kp MINUS  &kp EQUAL
                 &kp GRAVE  &kp DEL     &kp END     &kp PG_DN &none      &none       &none       &none        &none     &none      &none      &none
-                &kp CAPS      &none       &none       &none     &none      &none       &none       &none        &kp LBKT  &kp RBKT   &none      &kp BSLH
+                &kp CAPS   &none       &none       &none     &none      &none       &none       &none        &kp LBKT  &kp RBKT   &none      &kp BSLH
                 &kp RCTRL  &kp RGUI    &kp RALT    &mo 1     &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE    &mo 2     &none      &none      &none
             >;
         };
 
         raise_layer {
             // ------------------------------------------------------------------------------------------
-            // | PRTSCN|       |       |      |       |BT_NXT |BT_CLR |       |      |      |       |   DEL  |
-            // |  TAB  |       |       |      |       |       |       |       |      |      |   -   |    =   |
-            // |   `   |       |       |      |       |       |       |       |      |      |       |        |
-            // | R SFT |       |       |      |       |       |       |       |  [   |  ]   |       |    \   |
-            // | R CTL | RGUI  | RALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS |      |       |        |
+            // | PRTSCN|       |       |      |       |BT_NXT |BT_CLR |       |      |      |       |  DEL  |
+            // |  TAB  |       |       |      |       |       |       |       |      |      |   -   |   =   |
+            // |   `   |       |       |      |       |       |       |       |      |      |       |       |
+            // |  LSFT |       |       |      |       |       |       |       |  [   |  ]   |       |   \   |
+            // |  LCTR | LGUI  | LALT  | LOWR | SPACE | SPACE | SPACE | SPACE | RAIS | RALT |  RGUI |  RCTR |
             bindings = <
                 &kp PSCRN   &none    &none       &none     &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none      &none       &kp DEL
                 &kp TAB     &none    &none       &none     &none      &none        &none       &none        &none     &none      &kp MINUS   &kp EQUAL
                 &kp GRAVE   &none    &none       &none     &none      &none        &none       &none        &none     &none      &none       &none
-                &kp RSHFT   &none    &none       &none     &none      &none        &none       &none        &kp LBKT  &kp RBKT   &none       &kp BSLH
-                &kp RCTRL   &kp RGUI &kp RALT    &mo 1     &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &none      &none       &none
+                &kp LSHFT   &none    &none       &none     &none      &none        &none       &none        &kp LBKT  &kp RBKT   &none       &kp BSLH
+                &kp LCTRL   &kp LGUI &kp LALT    &mo 1     &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &kp RALT  &kp RGUI     &kp RCTRL
             >;
         };
 
