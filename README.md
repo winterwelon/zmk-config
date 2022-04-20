@@ -4,6 +4,8 @@ This is my current layer setup for a 5x12 ortholinear keyboard.
 Hope this helps you in determining your own setup.
 
 
+```
+
  default_layer {
             // ------------------------------------------------------------------------------------------
             // |  ESC  |  1*  |  2*  |  3*  |     4*    |   5*  |   6*   |    7*    |  8*  |  9*  |   0*  | BSPC  |
@@ -53,3 +55,5 @@ Hope this helps you in determining your own setup.
                 &ctrl_alt_del   &kp KP_DOT    &kp KP_N0  &mo 1      &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &kp C_PREV    &kp C_VOL_DN     &kp C_NEXT
             >;
         };
+        
+```        
