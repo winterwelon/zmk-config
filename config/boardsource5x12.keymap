@@ -230,7 +230,7 @@
                 &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U      &kp I       &kp O       &kp P       &tdsqt
                 &tdgrave   &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J      &kp K       &kp L       &tdsemi     &kp RET
                 &tdlshft   &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M      &tdcomma    &tddot      &kp UP      &tdfslh
-                &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2       &mo 3       &mo 4   &kp RIGHT 
+                &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2       &kp LEFT    &kp DOWN    &kp RIGHT 
             >;
         };
 
@@ -266,7 +266,7 @@
             >;
         };
 
-        adjust_layer {
+        adjust_layer_mo3 {
             // -----------------------------------------------------------------------------------------------
             // |      |       |       |       |          |       |        |          |       |       |       |       |
             // |      |       |       |       |          |       |        |          |       |       |       |       |
@@ -274,7 +274,7 @@
             // |      |       |       |       |          |       |        |          |       |       |       |       |
             // |      |       |       |       |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)|       |       |       |       |
             bindings = <
-                &kp A    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
@@ -282,7 +282,7 @@
             >;
         };
 
-        flock_layer {
+        lost_layer_mo4 {
             // -----------------------------------------------------------------------------------------------
             // |      |       |       |       |          |       |        |          |       |       |       |       |
             // |      |       |       |       |          |       |        |          |       |       |       |       |
@@ -290,7 +290,7 @@
             // |      |       |       |       |          |       |        |          |       |       |       |       |
             // |      |       |       |       |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)|       |       |       |       |
             bindings = <
-                &kp Z    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    
+                &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
                 &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none 
