@@ -196,7 +196,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LCTRL &kp LALT &kp DEL>
+                = <&macro_tap &kp LCTRL>
+                , <&macro_tap &kp LALT>
+                , <&macro_tap &kp DEL>
                 ;
         };
         
@@ -205,7 +207,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LCTRL &kp LSHIFT &kp ESC>
+                = <&macro_press &kp LCTRL &kp LSHIFT &kp ESC>
                 ;
         };
   };
