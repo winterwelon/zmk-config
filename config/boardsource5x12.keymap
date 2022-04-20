@@ -207,7 +207,9 @@
             bindings
                 = <&macro_tap &kp LCTRL &kp LSHIFT &kp ESC>
                 ;
-    };
+        };
+  };
+    
 
     keymap {
         compatible = "zmk,keymap";
