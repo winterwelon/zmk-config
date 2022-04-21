@@ -242,7 +242,6 @@
         };
   };
     
-
     keymap {
         compatible = "zmk,keymap";
         
@@ -282,13 +281,13 @@
 
         raise_layer {
             // ------------------------------------------------------------------------------------------
-            // | PRTSCN|       |       |       |          |BT_NXT | BT_CLR |          |      |      |        |    DEL   |
+            // | PSCRN | PSCRN*|       |       |          |BT_NXT | BT_CLR |          |      |      |        |    DEL   |
             // | C_S_E |   1   |   2   |   3   |          |       |        |          |      |   -  |   +    |          |
             // |       |   4   |   5   |   6   |          |       |        |          |      |   /  |   *    | KP ENTER |
             // |       |   7   |   8   |   9   |          |       |        |          |  [*  |  ]*  | VOL UP |    \*    |
             // | C_A_D |   .   |   0   | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS | PREV | VOL DN |   NEXT   |
             bindings = <
-                &lgui_pscrn     &none         &none      &none      &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none         &none            &kp DEL
+                &kp PSCRN       &lgui_pscrn   &none      &none      &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none         &none            &kp DEL
                 &ctrl_shift_esc &kp KP_N1     &kp KP_N2  &kp KP_N3  &none      &none        &none       &none        &none     &kp KP_MINUS  &kp KP_PLUS      &none
                 &none           &kp KP_N4     &kp KP_N5  &kp KP_N6  &none      &none        &none       &none        &none     &kp KP_DIVIDE &kp KP_MULTIPLY  &kp KP_ENTER
                 &none           &kp KP_N7     &kp KP_N8  &kp KP_N9  &none      &none        &none       &none        &tdlbkt   &tdrbkt       &kp C_VOL_UP     &tdbslh
