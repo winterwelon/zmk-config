@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N1";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N1>, <&kp EXCL>;
         };
         
@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N2";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N2>, <&kp AT>;
         };
         
@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N3";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N3>, <&kp POUND>;
         };
         
@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N4";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N4>, <&kp DLLR>;
         };
         
@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N5";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N5>, <&kp PRCNT>;
         };
         
@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N6";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N6>, <&kp CARET>;
         };
         
@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N7";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N7>, <&kp AMPS>;
         };
         
@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N8";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N8>, <&kp ASTRK>;
         };
         
@@ -81,7 +81,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N9";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N9>, <&kp LPAR>;
         };
         
@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_N0";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp N0>, <&kp RPAR>;
         };
         
@@ -97,7 +97,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LSHFT";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp LSHFT>, <&kp CAPS>;
         };
         
@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MINUS";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp MINUS>, <&kp UNDER>;
         };
         
@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EQUAL";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp EQUAL>, <&kp PLUS>;
         };
         
@@ -121,7 +121,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_LBKT";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp LBKT>, <&kp LBRC>;
         };
         
@@ -129,7 +129,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RBKT";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp RBKT>, <&kp RBRC>;
         };
         
@@ -137,7 +137,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_FSLH";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp FSLH>, <&kp QMARK>;
         };
         
@@ -145,7 +145,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BSLH";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp BSLH>, <&kp PIPE>;
         };
         
@@ -153,7 +153,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_GRAVE";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
         
@@ -161,7 +161,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COMMA";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp COMMA>, <&kp LT>;
         };
         
@@ -169,7 +169,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp DOT>, <&kp GT>;
         };
         
@@ -177,7 +177,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SQT";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp APOS>, <&kp DQT>;
         };
         
@@ -185,7 +185,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SEMI";
             #binding-cells = <0>;
-            tapping-term-ms = <185>;
+            tapping-term-ms = <180>;
             bindings = <&kp SEMI>, <&kp COLON>;
         };
     };
@@ -221,7 +221,7 @@
             // |  ESC  |  1*  |  2*  |  3*  |     4*    |   5*  |   6*   |    7*    |  8*  |  9*  |   0*  | BSPC  |
             // |  TAB  |  Q   |  W   |  E   |     R     |   T   |   Y    |    U     |  I   |  O   |   P   |   '*  |
             // |   `*  |  A   |  S   |  D   |     F     |   G   |   H    |    J     |  K   |  L   |   ;*  | ENTER |
-            // | SHIFT*|  Z   |  X   |  C   |     V     |   B   |   N    |    M     |  ,*  |  .*  | UARW  |  /*   |
+            // | SHIFT |  Z   |  X   |  C   |     V     |   B   |   N    |    M     |  ,*  |  .*  | UARW  |  /*   |
             // | LCTL  | LGUI | LALT | LOWR | 2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS | LARW | DARW  | RARW  |
 
 
@@ -229,7 +229,7 @@
                 &kp ESC    &tdn1        &tdn2       &tdn3    &tdn4      &tdn5       &tdn6       &tdn7      &tdn8       &tdn9       &tdn0       &kp BSPC
                 &kp TAB    &kp Q        &kp W       &kp E    &kp R      &kp T       &kp Y       &kp U      &kp I       &kp O       &kp P       &tdsqt
                 &tdgrave   &kp A        &kp S       &kp D    &kp F      &kp G       &kp H       &kp J      &kp K       &kp L       &tdsemi     &kp RET
-                &tdlshft   &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M      &tdcomma    &tddot      &kp UP      &tdfslh
+                &kp LSHFT   &kp Z        &kp X       &kp C    &kp V      &kp B       &kp N       &kp M      &tdcomma    &tddot      &kp UP      &tdfslh
                 &kp LCTRL  &kp LGUI     &kp LALT    &mo 1    &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE  &mo 2       &kp LEFT    &kp DOWN    &kp RIGHT 
             >;
         };
@@ -255,13 +255,13 @@
             // | PRTSCN|       |       |       |          |BT_NXT | BT_CLR |          |      |      |        |    DEL   |
             // | C_S_E |   1   |   2   |   3   |          |       |        |          |      |   -  |   +    |          |
             // |       |   4   |   5   |   6   |          |       |        |          |      |   /  |   *    | KP ENTER |
-            // |       |   7   |   8   |   9   |          |       |        |          |  [*  |  ]*  | VOL UP |    \*    |
+            // | SHIFT*|   7   |   8   |   9   |          |       |        |          |  [*  |  ]*  | VOL UP |    \*    |
             // | C_A_D |   .   |   0   | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS | PREV | VOL DN |   NEXT   |
             bindings = <
                 &kp PSCRN       &none         &none      &none      &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none         &none            &kp DEL
                 &ctrl_shift_esc &kp KP_N1     &kp KP_N2  &kp KP_N3  &none      &none        &none       &none        &none     &kp KP_MINUS  &kp KP_PLUS      &none
                 &none           &kp KP_N4     &kp KP_N5  &kp KP_N6  &none      &none        &none       &none        &none     &kp KP_DIVIDE &kp KP_MULTIPLY  &kp KP_ENTER
-                &none           &kp KP_N7     &kp KP_N8  &kp KP_N9  &none      &none        &none       &none        &tdlbkt   &tdrbkt       &kp C_VOL_UP     &tdbslh
+                &tdlshft        &kp KP_N7     &kp KP_N8  &kp KP_N9  &none      &none        &none       &none        &tdlbkt   &tdrbkt       &kp C_VOL_UP     &tdbslh
                 &ctrl_alt_del   &kp KP_DOT    &kp KP_N0  &mo 1      &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &kp C_PREV    &kp C_VOL_DN     &kp C_NEXT
             >;
         };
