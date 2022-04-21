@@ -211,16 +211,6 @@
                 ;
         };
         
-        alt_tab: alt_tab {
-            label = "ZM_alt_tab";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press   &kp LALT &kp TAB>
-                , <&macro_release &kp LALT &kp TAB>
-                ;
-        };
-        
         lgui_d: lgui_d {
             label = "ZM_lgui_d";
             compatible = "zmk,behavior-macro";
@@ -277,13 +267,13 @@
         lower_layer {
             // -------------------------------------------------------------------------------------------
             // |   F1   |  F2   |  F3   |  F4   |    F5    |  F6   |   F7   |    F8    |  F9  | F10  |  F11  |  F12  |
-            // |alt_tab*|  INS  |  HOME | PG UP | File Exp*|       |        |          |      |      |  -*   |  =*   |
+            // |        |  INS  |  HOME | PG UP | File Exp*|       |        |          |      |      |  -*   |  =*   |
             // | win+d* |  DEL  |  END  | PG DN |          |       |        |          |      |      |       |       |
             // |  CAPS  |       |       |       |          |       |        |          |  [*  |  ]*  |       |   \*  |
             // |        |       |       | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS |      |       |       |
             bindings = <
                 &kp F1     &kp F2      &kp F3      &kp F4    &kp F5     &kp F6      &kp F7      &kp F8       &kp F9    &kp F10    &kp F11    &kp F12
-                &alt_tab   &kp INS     &kp HOME    &kp PG_UP &lgui_e      &none       &none       &none        &none     &none      &tdminus   &tdequal
+                &none      &kp INS     &kp HOME    &kp PG_UP &lgui_e      &none       &none       &none        &none     &none      &tdminus   &tdequal
                 &lgui_d    &kp DEL     &kp END     &kp PG_DN &none      &none       &none       &none        &none     &none      &none      &none
                 &kp CAPS   &none       &none       &none     &none      &none       &none       &none        &tdlbkt   &tdrbkt    &none      &tdbslh
                 &none      &none       &none       &mo 1     &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE    &mo 2     &none      &none      &none
