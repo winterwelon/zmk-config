@@ -210,6 +210,46 @@
                 , <&macro_release &kp LCTRL &kp LSHIFT &kp ESC>
                 ;
         };
+        
+        alt_tab: alt_tab {
+            label = "ZM_alt_tab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT &kp TAB>
+                , <&macro_release &kp LALT &kp TAB>
+                ;
+        };
+        
+        lgui_d: lgui_d {
+            label = "ZM_lgui_d";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LGUI &kp D>
+                , <&macro_release &kp LGUI &kp D>
+                ;
+        };
+        
+        lgui_pscrn: lgui_pscrn {
+            label = "ZM_lgui_pscrn";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LGUI &kp PSCRN>
+                , <&macro_release &kp LGUI &kp PSCRN>
+                ;
+        };
+        
+        lgui_e: lgui_e {
+            label = "ZM_lgui_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LGUI &kp E>
+                , <&macro_release &kp LGUI &kp E>
+                ;
+        };
   };
     
 
@@ -236,16 +276,16 @@
 
         lower_layer {
             // -------------------------------------------------------------------------------------------
-            // |   F1  |  F2   |  F3   |  F4   |    F5    |  F6   |   F7   |    F8    |  F9  | F10  |  F11  |  F12  |
-            // |       |  INS  |  HOME | PG UP |          |       |        |          |      |      |  -*   |  =*   |
-            // |       |  DEL  |  END  | PG DN |          |       |        |          |      |      |       |       |
-            // |       |       |       |       |          |       |        |          |  [*  |  ]*  |       |   \*  |
-            // |       |       |       | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS |      |       |       |
+            // |   F1   |  F2   |  F3   |  F4   |    F5    |  F6   |   F7   |    F8    |  F9  | F10  |  F11  |  F12  |
+            // |alt_tab*|  INS  |  HOME | PG UP | File Exp*|       |        |          |      |      |  -*   |  =*   |
+            // | win+d* |  DEL  |  END  | PG DN |          |       |        |          |      |      |       |       |
+            // |  CAPS  |       |       |       |          |       |        |          |  [*  |  ]*  |       |   \*  |
+            // |        |       |       | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS |      |       |       |
             bindings = <
                 &kp F1     &kp F2      &kp F3      &kp F4    &kp F5     &kp F6      &kp F7      &kp F8       &kp F9    &kp F10    &kp F11    &kp F12
-                &none      &kp INS     &kp HOME    &kp PG_UP &none      &none       &none       &none        &none     &none      &tdminus   &tdequal
-                &none      &kp DEL     &kp END     &kp PG_DN &none      &none       &none       &none        &none     &none      &none      &none
-                &none      &none       &none       &none     &none      &none       &none       &none        &tdlbkt   &tdrbkt    &none      &tdbslh
+                &alt_tab   &kp INS     &kp HOME    &kp PG_UP &lgui_e      &none       &none       &none        &none     &none      &tdminus   &tdequal
+                &lgui_d    &kp DEL     &kp END     &kp PG_DN &none      &none       &none       &none        &none     &none      &none      &none
+                &kp CAPS   &none       &none       &none     &none      &none       &none       &none        &tdlbkt   &tdrbkt    &none      &tdbslh
                 &none      &none       &none       &mo 1     &kp SPACE  &kp SPACE   &kp SPACE   &kp SPACE    &mo 2     &none      &none      &none
             >;
         };
@@ -255,13 +295,13 @@
             // | PRTSCN|       |       |       |          |BT_NXT | BT_CLR |          |      |      |        |    DEL   |
             // | C_S_E |   1   |   2   |   3   |          |       |        |          |      |   -  |   +    |          |
             // |       |   4   |   5   |   6   |          |       |        |          |      |   /  |   *    | KP ENTER |
-            // | SHIFT*|   7   |   8   |   9   |          |       |        |          |  [*  |  ]*  | VOL UP |    \*    |
+            // |       |   7   |   8   |   9   |          |       |        |          |  [*  |  ]*  | VOL UP |    \*    |
             // | C_A_D |   .   |   0   | LOWR  |2uSpace(a)|4uSpace|  N/A** |2uSpace(b)| RAIS | PREV | VOL DN |   NEXT   |
             bindings = <
-                &kp PSCRN       &none         &none      &none      &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none         &none            &kp DEL
+                &lgui_pscrn     &none         &none      &none      &bt BT_NXT &bt BT_CLR   &none       &none        &none     &none         &none            &kp DEL
                 &ctrl_shift_esc &kp KP_N1     &kp KP_N2  &kp KP_N3  &none      &none        &none       &none        &none     &kp KP_MINUS  &kp KP_PLUS      &none
                 &none           &kp KP_N4     &kp KP_N5  &kp KP_N6  &none      &none        &none       &none        &none     &kp KP_DIVIDE &kp KP_MULTIPLY  &kp KP_ENTER
-                &tdlshft        &kp KP_N7     &kp KP_N8  &kp KP_N9  &none      &none        &none       &none        &tdlbkt   &tdrbkt       &kp C_VOL_UP     &tdbslh
+                &none           &kp KP_N7     &kp KP_N8  &kp KP_N9  &none      &none        &none       &none        &tdlbkt   &tdrbkt       &kp C_VOL_UP     &tdbslh
                 &ctrl_alt_del   &kp KP_DOT    &kp KP_N0  &mo 1      &kp SPACE  &kp SPACE    &kp SPACE   &kp SPACE    &mo 2     &kp C_PREV    &kp C_VOL_DN     &kp C_NEXT
             >;
         };
