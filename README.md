@@ -116,7 +116,7 @@ Here are some of the steps I've taken to make it.
 #### 4u Spacebar Setup
 <table>
   <tr>
-    <td>Kailh Switch Setup</td>
+    <td>Box Kailh Switches</td>
      <td></td>
   </tr>
   <tr>
