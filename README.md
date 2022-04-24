@@ -6,7 +6,7 @@
 
 - :heavy_check_mark: 5x12 Ortholinear Keyboard
 - :heavy_check_mark: Hotswappable
-- :heavy_check_mark: Modular Spacebar 1x4u (58 keys) or 2x2u (59 keys)
+- :heavy_check_mark: Modular Spacebar 1x4u (57 keys) or 2x2u (58 keys)
 - :heavy_check_mark: Wireless Bluetooth /w nice!nano running ZMK firmware
 
 ## Why?
