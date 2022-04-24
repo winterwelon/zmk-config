@@ -70,7 +70,7 @@ Here are some of the steps I've taken to make it.
 
 #### Enclosure
 - Inclined at a [7° angle](https://matt3o.com/about-mt3-profile-and-devtty-set/) as suggested by the MT3 Profile Creator.
-- Bezeled inner case to support the PCB board
+- Bezeled inner case to support the PCB
 - 3D Printed at 100% infill for structural integrity as well. 
 - Print time was roughly ~60 hours.
 
