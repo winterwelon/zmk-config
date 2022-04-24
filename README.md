@@ -54,7 +54,7 @@ Here are some of the steps I've taken to make it.
 
 
 #### Top Plate
-- 3D Printed with PLA filament at 100% infill.
+- 3D Printed with PLA filament at 100% infill
 
 <table>
   <tr>
@@ -69,10 +69,10 @@ Here are some of the steps I've taken to make it.
  
 
 #### Enclosure
-- Inclined at a [7° angle](https://matt3o.com/about-mt3-profile-and-devtty-set/) as suggested by the MT3 Profile Creator.
+- Inclined at a [7° angle](https://matt3o.com/about-mt3-profile-and-devtty-set/) as suggested by the MT3 Profile Creator
 - Bezeled inner case to support the PCB
-- 3D Printed at 100% infill for structural integrity as well. 
-- Print time was roughly ~60 hours.
+- 3D Printed at 100% infill for structural integrity as well 
+- Print time was roughly ~60 hours
 
 <table>
   <tr>
@@ -131,6 +131,9 @@ Here are some of the steps I've taken to make it.
 
 
 #### 2x2u Spacebar Setup
+- Tactile Browns on Alphas, Space & Enter
+- Clicky on Modifiers, Arrows and Numerals
+
 <table>
   <tr>
     <td>Box Brown, Orange, Royal Navy Switches</td>
