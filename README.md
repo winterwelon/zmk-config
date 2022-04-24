@@ -117,8 +117,21 @@ Here are some of the steps I've taken to make it.
   </tr>
  </table>
  
+ <table>
+  <tr>
+    <td>Assembled Board</td>
+     <td>3.7v 350mAh DS 602035 LiPo Battery + Foam Inserts </td>
+  </tr>
+  <tr>
+    <td><img src="/images/17_5x12_build.png" width=450</td>
+    <td><img src="/images/18_5x12_build.png" width=450</td>
+  </tr>
+ </table>
+ 
 
 #### 4u Spacebar Setup
+- Tactile Browns on Alphas, Space & Enter
+- Clicky on Modifiers, Arrows and Numerals
 <table>
   <tr>
     <td>Box Kailh Switches</td>
@@ -132,8 +145,6 @@ Here are some of the steps I've taken to make it.
 
 
 #### 2x2u Spacebar Setup
-- Tactile Browns on Alphas, Space & Enter
-- Clicky on Modifiers, Arrows and Numerals
 
 <table>
   <tr>
