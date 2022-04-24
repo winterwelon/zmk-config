@@ -55,6 +55,7 @@ Here are some of the steps I've taken to make it.
 
 #### Top Plate
 - 3D Printed with PLA filament at 100% infill
+- 4x M2 screws for support
 
 <table>
   <tr>
