@@ -59,7 +59,7 @@ Here are some of the steps I've taken to make it.
 <table>
   <tr>
     <td>4U Spacebar Top Plate</td>
-     <td>2x 2u Spacebar Top Plate</td>
+     <td>2x2u Spacebar Top Plate</td>
   </tr>
   <tr>
     <td><img src="/images/05_model_grill_4u.png" width=450</td>
@@ -104,6 +104,7 @@ Here are some of the steps I've taken to make it.
 
 
 #### 5x12 Ortho Build
+- Added an on/off switch to quickly manually reset the battery powered MCU
 <table>
   <tr>
     <td>Soldering hotwap switches & diodes</td>
@@ -147,7 +148,7 @@ Here are some of the steps I've taken to make it.
   <tr>
     <td></td>
      <td></td>
-      <td></td>
+      <td>On/Off Switch for easy access</td>
   </tr>
   <tr>
     <td><img src="/images/23_5x12.png" width=450</td>
