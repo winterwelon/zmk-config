@@ -26,6 +26,8 @@ So... here I am, learning how to make it from the ground up over the course of a
 Here are some of the steps I've taken to make it.
 
 #### PCB Design
+- USB port on the left since it couldn't fit on the top
+- Added a reset switch into the board for quick firmware flashing
 <table>
   <tr>
     <td>Schematic</td>
@@ -68,6 +70,7 @@ Here are some of the steps I've taken to make it.
 
 #### Enclosure
 - Inclined at a [7° angle](https://matt3o.com/about-mt3-profile-and-devtty-set/) as suggested by the MT3 Profile Creator.
+- Bezeled inner case to support the PCB board
 - 3D Printed at 100% infill for structural integrity as well. 
 - Print time was roughly ~60 hours.
 
@@ -89,7 +92,7 @@ Here are some of the steps I've taken to make it.
     <td>Wireframe Right View</td>
      <td>Back View</td>
       <td>Wireframe Back View</td>
-       <td>Bottom View</td>
+       <td>Bottom View w/ hex screwholes & reset port</td>
   </tr>
   <tr>
     <td><img src="/images/10_model_right_xray.png" width=450</td>
