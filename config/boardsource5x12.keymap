@@ -153,7 +153,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_GRAVE";
             #binding-cells = <0>;
-            tapping-term-ms = <220>;
+            tapping-term-ms = <380>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
         
