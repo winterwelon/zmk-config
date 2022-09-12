@@ -13,37 +13,37 @@
 / {
 
     behaviors {
-        tdn1: tap_dance_n1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_N1";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp N1>, <&kp EXCL>;
-        };
-        
-        tdn2: tap_dance_n2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_N2";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp N2>, <&kp AT>;
-        };
-        
-        tdn3: tap_dance_n3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_N3";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp N3>, <&kp POUND>;
-        };
-        
-        tdn4: tap_dance_n4 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_N4";
-            #binding-cells = <0>;
-            tapping-term-ms = <180>;
-            bindings = <&kp N4>, <&kp DLLR>;
-        };
+/*        tdn1: tap_dance_n1 {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           label = "TAP_DANCE_N1";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <180>;
+ *           bindings = <&kp N1>, <&kp EXCL>;
+ *       };
+ *       
+ *       tdn2: tap_dance_n2 {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           label = "TAP_DANCE_N2";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <180>;
+ *           bindings = <&kp N2>, <&kp AT>;
+ *       };
+ *       
+ *       tdn3: tap_dance_n3 {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           label = "TAP_DANCE_N3";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <180>;
+ *           bindings = <&kp N3>, <&kp POUND>;
+ *       };
+ *       
+ *       tdn4: tap_dance_n4 {
+ *           compatible = "zmk,behavior-tap-dance";
+ *           label = "TAP_DANCE_N4";
+ *           #binding-cells = <0>;
+ *           tapping-term-ms = <180>;
+ *           bindings = <&kp N4>, <&kp DLLR>;
+         }; */
         
         tdn5: tap_dance_n5 {
             compatible = "zmk,behavior-tap-dance";
