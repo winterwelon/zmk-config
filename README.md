@@ -176,6 +176,17 @@ Shoutout to the wiki guides on [/r/MechanicalKeyboards](https://www.reddit.com/r
 
 [current keymapping](/config/boardsource5x12.keymap)
 
+
+Apr.25.23 Update:
+Added gerber file for pcb manufacturing.
+
+Feedback on 1x4u Spacebar setup 
+
+
+It isn't perfect or great, would need a custom 4u springboard made to increase rebound sensitivity.
+Using 2 additional 1u modified switches does not make it a great spacebar experience.
+2x2u spacebar setup is still by far superior in feel and feedback responsiveness. 
+
 <sup><sub>I'm on [reddit](https://www.reddit.com/user/winterwelon).</sup></sub>
 
 
